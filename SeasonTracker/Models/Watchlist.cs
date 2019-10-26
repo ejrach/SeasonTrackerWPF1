@@ -14,6 +14,6 @@ namespace SeasonTracker.Models
 
         public string NumberOfEpisodes { get; set; }
 
-        public string Viewlist { get; set; }
+        public string EpisodeViewlist { get; set; }
     }
 }
