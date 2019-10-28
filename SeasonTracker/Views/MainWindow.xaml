@@ -4,11 +4,16 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SeasonTracker"
+        xmlns:vm ="clr-namespace:SeasonTracker.ViewModels"
         mc:Ignorable="d"
         Title="" Height="550" Width="900"
-        ResizeMode="NoResize"
         Style="{StaticResource windowsStyle}">
-    <Grid Margin="10">
+    
+    <Window.Resources>
+        <vm:ViewModelBase x:Key="vm" />
+    </Window.Resources>
+    
+    <Grid Margin="10" DataContext="{StaticResource vm}">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
@@ -28,7 +33,8 @@
                 Grid.Row ="0" 
                 Grid.Column="1"
                 Style="{StaticResource menuButtonsStyle}" />
-        <Button Content="Add" 
+        <Button Content="Add"
+                Command="{Binding AddTvShowCommand}"
                 Grid.Row ="0" 
                 Grid.Column="2"
                 Style="{StaticResource menuButtonsStyle}"/>

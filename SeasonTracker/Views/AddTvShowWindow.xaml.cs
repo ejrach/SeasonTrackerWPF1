@@ -10,7 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace SeasonTracker.View
+namespace SeasonTracker.Views
 {
     /// <summary>
     /// Interaction logic for AddTvShowWindow.xaml
