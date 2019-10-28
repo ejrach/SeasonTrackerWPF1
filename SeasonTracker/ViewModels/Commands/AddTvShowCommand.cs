@@ -7,10 +7,10 @@ namespace SeasonTracker.ViewModels.Commands
 {
     public class AddTvShowCommand : ICommand
     {
-        public ViewModelBase ViewModel { get; set; }
+        public MainWindowViewModel ViewModel { get; set; }
 
         //Constructor, passing the ViewModelBase. Set equal to the property ViewModel
-        public AddTvShowCommand(ViewModelBase viewModel)
+        public AddTvShowCommand(MainWindowViewModel viewModel)
         {
             this.ViewModel = viewModel;
         }

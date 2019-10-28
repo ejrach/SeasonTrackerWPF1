@@ -7,10 +7,10 @@ namespace SeasonTracker.ViewModels.Commands
 {
     public class MyListCommand : ICommand
     {
-        public ViewModelBase ViewModel { get; set; }
+        public MainWindowViewModel ViewModel { get; set; }
 
         //Constructor, passing the ViewModelBase. Set equal to the property ViewModel
-        public MyListCommand(ViewModelBase viewModel)
+        public MyListCommand(MainWindowViewModel viewModel)
         {
             this.ViewModel = viewModel;
         }

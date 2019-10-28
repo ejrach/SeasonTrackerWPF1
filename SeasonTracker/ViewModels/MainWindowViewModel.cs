@@ -7,13 +7,13 @@ using SeasonTracker.Views;
 namespace SeasonTracker.ViewModels
 {
     //Base class common for all viewmodels. 
-    public class ViewModelBase
+    public class MainWindowViewModel
     {
         public AddTvShowCommand AddTvShowCommand { get; set; }
         public MyListCommand MyListCommand { get; set; }
 
         //Constructor - initialize all commands here...
-        public ViewModelBase()
+        public MainWindowViewModel()
         {
             this.AddTvShowCommand = new AddTvShowCommand(this);
             this.MyListCommand = new MyListCommand(this);

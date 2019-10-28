@@ -10,7 +10,7 @@
         Style="{StaticResource windowsStyle}">
     
     <Window.Resources>
-        <vm:ViewModelBase x:Key="vm" />
+        <vm:MainWindowViewModel x:Key="vm" />
     </Window.Resources>
     
     <Grid Margin="10" DataContext="{StaticResource vm}">
