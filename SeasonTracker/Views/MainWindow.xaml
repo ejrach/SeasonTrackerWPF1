@@ -39,6 +39,7 @@
                 Grid.Column="2"
                 Style="{StaticResource menuButtonsStyle}"/>
         <Button Content="My List"
+                Command="{Binding MyListCommand}"
                 Grid.Row ="0" 
                 Grid.Column="3" 
                 Style="{StaticResource menuButtonsStyle}" />
